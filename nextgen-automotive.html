@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextGen Automotive Finishes | Auto Parts & Accessories | Wallingford, CT</title>
+<meta name="description" content="NextGen Automotive Finishes in Wallingford, CT. Quality auto parts, accessories, and customization. Shop online or visit us today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #1B2A4A;
+  --navy-dark: #111E36;
+  --navy-mid: #243558;
+  --navy-light: #2E4270;
+  --cream: #FAF6EE;
+  --cream-dark: #F0E9DC;
+  --cream-mid: #E8DDD0;
+  --warm-white: #FFFDF9;
+  --tan: #C9B99A;
+  --rust: #B5622A;
+  --rust-light: #D07840;
+  --gold: #C9A84C;
+  --text-dark: #1A1612;
+  --text-mid: #3D3328;
+  --text-muted: #7A6E60;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--warm-white); color: var(--text-dark); line-height: 1.6; }
+
+/* ── NAV ── */
+nav {
+  background: var(--warm-white);
+  border-bottom: 1px solid var(--cream-mid);
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 1px 12px rgba(27,42,74,0.07);
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.nav-logo-mark {
+  width: 40px;
+  height: 40px;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--cream);
+  letter-spacing: -1px;
+}
+.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+.nav-logo-top {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+}
+.nav-logo-bottom {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.nav-links { display: flex; gap: 2.5rem; align-items: center; }
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--text-mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--navy); }
+.nav-right { display: flex; align-items: center; gap: 1.25rem; }
+.nav-cart {
+  position: relative;
+  cursor: pointer;
+  color: var(--navy);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: var(--rust);
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn { display: inline-block; text-decoration: none; cursor: pointer; border: none; font-family: var(--font-body); font-weight: 600; letter-spacing: 0.5px; transition: all 0.22s; }
+.btn-navy { background: var(--navy); color: var(--cream); padding: 12px 28px; font-size: 14px; }
+.btn-navy:hover { background: var(--navy-dark); }
+.btn-outline-navy { background: transparent; color: var(--navy); padding: 11px 26px; font-size: 14px; border: 1.5px solid var(--navy); }
+.btn-outline-navy:hover { background: var(--navy); color: var(--cream); }
+.btn-cream { background: var(--cream); color: var(--navy); padding: 14px 32px; font-size: 15px; font-weight: 600; }
+.btn-cream:hover { background: var(--warm-white); }
+.btn-rust { background: var(--rust); color: white; padding: 12px 26px; font-size: 14px; font-weight: 600; }
+.btn-rust:hover { background: var(--rust-light); }
+.btn-sm { padding: 9px 20px; font-size: 13px; }
+
+/* ── ANNOUNCEMENT BAR ── */
+.announce-bar {
+  background: var(--navy);
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  padding: 9px 2rem;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.announce-bar strong { color: var(--gold); }
+
+/* ── HERO ── */
+.hero {
+  background: var(--cream);
+  min-height: 580px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  position: relative;
+}
+.hero-left {
+  padding: 5rem 4rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 1.25rem;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--rust);
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1.0;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+.hero h1 em { color: var(--rust); font-style: italic; }
+.hero-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 440px;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.hero-trust {
+  display: flex;
+  gap: 2rem;
+}
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.trust-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+.trust-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Hero photo placeholder */
+.hero-right {
+  position: relative;
+  overflow: hidden;
+}
+.hero-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+  background: linear-gradient(135deg, #c8d5e8 0%, #a8bdd8 40%, #8aa5c8 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+.hero-photo-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255,255,255,0.04) 30px, rgba(255,255,255,0.04) 60px);
+}
+.photo-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(27,42,74,0.5);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.photo-icon {
+  font-size: 48px;
+  opacity: 0.35;
+  position: relative;
+  z-index: 2;
+}
+.photo-tag {
+  background: rgba(27,42,74,0.15);
+  border: 1px solid rgba(27,42,74,0.2);
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: rgba(27,42,74,0.6);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.hero-overlay-card {
+  position: absolute;
+  bottom: 2rem;
+  left: -2rem;
+  background: var(--warm-white);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 32px rgba(27,42,74,0.15);
+  max-width: 220px;
+  z-index: 10;
+}
+.overlay-card-label { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rust); margin-bottom: 4px; }
+.overlay-card-text { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--navy); }
+
+/* ── CATEGORY STRIP ── */
+.category-strip {
+  background: var(--navy);
+  padding: 3rem 5rem;
+}
+.strip-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.cat-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.22s;
+  text-decoration: none;
+}
+.cat-card:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.cat-icon { font-size: 30px; display: block; margin-bottom: 0.75rem; }
+.cat-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 3px;
+}
+.cat-count {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 1px;
+}
+
+/* ── SECTION SHARED ── */
+.section-inner { max-width: 1200px; margin: 0 auto; padding: 0 3rem; }
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  max-width: 40px;
+  height: 1px;
+  background: var(--rust);
+  opacity: 0.5;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.section-title em { color: var(--rust); font-style: italic; }
+.section-sub {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+/* ── FEATURED PRODUCTS ── */
+.products-bg { background: var(--warm-white); padding: 5rem 0; }
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.product-card {
+  background: var(--cream);
+  border: 1px solid var(--cream-mid);
+  overflow: hidden;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.product-card:hover { box-shadow: 0 12px 36px rgba(27,42,74,0.12); transform: translateY(-3px); }
+.product-img-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.product-img-placeholder.bg1 { background: linear-gradient(135deg, #dde5f0, #c5d3e8); }
+.product-img-placeholder.bg2 { background: linear-gradient(135deg, #e8e0d0, #d5c9b5); }
+.product-img-placeholder.bg3 { background: linear-gradient(135deg, #d0dce8, #b8ccdf); }
+.product-img-placeholder.bg4 { background: linear-gradient(135deg, #e5d8cc, #d4c4b0); }
+.product-img-placeholder.bg5 { background: linear-gradient(135deg, #cfd8e8, #b5c4d8); }
+.product-img-placeholder.bg6 { background: linear-gradient(135deg, #e0d5c8, #ccc0ac); }
+.product-img-placeholder.bg7 { background: linear-gradient(135deg, #d8e0ec, #c0cedf); }
+.product-img-placeholder.bg8 { background: linear-gradient(135deg, #e8ddd0, #d5c8b8); }
+.product-img-icon { font-size: 36px; opacity: 0.4; }
+.product-img-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(27,42,74,0.45);
+  background: rgba(255,255,255,0.5);
+  padding: 3px 8px;
+}
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--rust);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+}
+.product-badge.badge-new { background: var(--navy); }
+.product-info { padding: 1.25rem; }
+.product-cat {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 5px;
+}
+.product-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+.product-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-price {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.product-price-old {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin-left: 4px;
+}
+.add-to-cart {
+  background: var(--navy);
+  color: var(--cream);
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.2s;
+  letter-spacing: 0.5px;
+}
+.add-to-cart:hover { background: var(--navy-dark); }
+
+/* ── PROMO BANNER ── */
+.promo-banner {
+  background: var(--navy);
+  padding: 4rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.promo-banner::before {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.08);
+}
+.promo-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.promo-title { font-family: var(--font-display); font-size: 44px; font-weight: 900; color: var(--cream); line-height: 1.05; margin-bottom: 1.25rem; }
+.promo-title em { color: var(--gold); font-style: italic; }
+.promo-desc { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 2rem; }
+.promo-actions { display: flex; gap: 1rem; }
+.promo-img-placeholder {
+  height: 280px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+.promo-img-placeholder .photo-label { color: rgba(255,255,255,0.3); }
+.promo-img-placeholder .photo-icon { opacity: 0.2; }
+.promo-img-placeholder .photo-tag { border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.3); background: transparent; }
+
+/* ── MORE PRODUCTS ── */
+.more-products-bg { background: var(--cream); padding: 5rem 0; }
+
+/* ── WHY US ── */
+.why-bg { background: var(--warm-white); padding: 5rem 0; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.why-card {
+  border: 1px solid var(--cream-mid);
+  padding: 2rem;
+  position: relative;
+}
+.why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--navy);
+}
+.why-num {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--cream-mid);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.why-title { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 0.75rem; }
+.why-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+/* ── ABOUT STRIP ── */
+.about-strip {
+  background: var(--cream-dark);
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.about-img-placeholder {
+  height: 360px;
+  background: linear-gradient(135deg, #c0ccdc, #a8bcd0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+.about-img-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.05) 20px, rgba(255,255,255,0.05) 40px);
+}
+.about-text .section-title { font-size: 36px; margin-bottom: 1rem; }
+.about-body { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; }
+.about-details { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+.about-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-mid);
+  font-weight: 500;
+}
+.about-detail::before {
+  content: '✓';
+  width: 20px;
+  height: 20px;
+  background: var(--navy);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ── REVIEWS ── */
+.reviews-bg { background: var(--navy); padding: 5rem 0; }
+.reviews-bg .section-label { color: var(--gold); }
+.reviews-bg .section-label::after { background: var(--gold); }
+.reviews-bg .section-title { color: var(--cream); }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.review-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem;
+}
+.review-stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; margin-bottom: 1rem; }
+.review-text { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.75; margin-bottom: 1.25rem; font-style: italic; }
+.review-author { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); }
+
+/* ── CTA BANNER ── */
+.cta-banner {
+  background: var(--cream-dark);
+  padding: 4rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--cream-mid);
+  border-bottom: 1px solid var(--cream-mid);
+}
+.cta-banner h2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.1;
+}
+.cta-banner h2 em { color: var(--rust); font-style: italic; }
+.cta-banner p { font-size: 15px; color: var(--text-muted); margin-top: 0.5rem; max-width: 420px; }
+.cta-actions { display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-end; }
+.cta-phone {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+}
+.cta-phone:hover { color: var(--rust); }
+.cta-address { font-size: 13px; color: var(--text-muted); text-align: right; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy-dark);
+  padding: 4rem 5rem 2rem;
+  color: rgba(255,255,255,0.6);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--cream);
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+.footer-tagline { font-size: 13px; line-height: 1.7; color: rgba(255,255,255,0.45); max-width: 240px; margin-bottom: 1.5rem; }
+.footer-col h4 {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.footer-col ul li { font-size: 13px; color: rgba(255,255,255,0.5); }
+.footer-col ul li a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-col ul li a:hover { color: var(--cream); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+.footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+.footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+
+/* ── CART TOAST ── */
+.cart-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--navy);
+  color: var(--cream);
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-toast.show { transform: translateY(0); opacity: 1; }
+.toast-check { color: var(--gold); font-size: 16px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-left { padding: 3rem 2rem; }
+  .hero h1 { font-size: 44px; }
+  .hero-right { display: none; }
+  .categories-grid { grid-template-columns: repeat(3, 1fr); padding: 0 1.5rem; }
+  .category-strip { padding: 2.5rem 1.5rem; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .section-inner { padding: 0 1.5rem; }
+  .promo-banner { grid-template-columns: 1fr; padding: 3rem 2rem; }
+  .about-strip { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 2rem; }
+  .why-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .cta-banner { flex-direction: column; gap: 2rem; padding: 3rem 2rem; text-align: center; }
+  .cta-actions { align-items: center; }
+  footer { padding: 3rem 2rem 2rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCE BAR -->
+<div class="announce-bar">
+  Free shipping on orders over <strong>$75</strong> &nbsp;·&nbsp; Call us: <strong>(203) 269-6753</strong> &nbsp;·&nbsp; Wallingford, CT
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">NG</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-top">NextGen Automotive</span>
+      <span class="nav-logo-bottom">Finishes · Wallingford, CT</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#shop">Shop</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-cart" id="cartIcon" title="Shopping Cart">
+      🛒
+      <span class="cart-badge" id="cartCount">0</span>
+    </div>
+    <a href="tel:2032696753" class="btn btn-navy btn-sm">Call Us</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Wallingford's Auto Parts Specialists</div>
+    <h1>Parts That <em>Elevate</em> Your Ride</h1>
+    <p class="hero-sub">Quality auto parts, accessories, and customization products — from everyday maintenance to performance upgrades. Everything your vehicle needs, all in one place.</p>
+    <div class="hero-actions">
+      <a href="#shop" class="btn btn-navy">Shop Now</a>
+      <a href="#about" class="btn btn-outline-navy">Learn More</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item">
+        <span class="trust-num">500+</span>
+        <span class="trust-label">Products</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-num">Fast</span>
+        <span class="trust-label">Shipping</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-num">Local</span>
+        <span class="trust-label">Since 2010</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo-placeholder">
+      <div class="photo-icon">🚗</div>
+      <div class="photo-label">Hero Photo<br>Shop interior / lifestyle shot</div>
+      <div class="photo-tag">1200 × 580px recommended</div>
+    </div>
+    <div class="hero-overlay-card">
+      <div class="overlay-card-label">Now Available</div>
+      <div class="overlay-card-text">Online Shopping & Local Pickup</div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY STRIP -->
+<section class="category-strip" id="categories">
+  <div class="strip-label">Browse by Category</div>
+  <div class="categories-grid">
+    <a href="#shop" class="cat-card">
+      <span class="cat-icon">🔧</span>
+      <span class="cat-name">Engine Parts</span>
+      <span class="cat-count">120+ items</span>
+    </a>
+    <a href="#shop" class="cat-card">
+      <span class="cat-icon">🛞</span>
+      <span class="cat-name">Wheels & Tires</span>
+      <span class="cat-count">80+ items</span>
+    </a>
+    <a href="#shop" class="cat-card">
+      <span class="cat-icon">✨</span>
+      <span class="cat-name">Detailing</span>
+      <span class="cat-count">95+ items</span>
+    </a>
+    <a href="#shop" class="cat-card">
+      <span class="cat-icon">💡</span>
+      <span class="cat-name">Lighting</span>
+      <span class="cat-count">60+ items</span>
+    </a>
+    <a href="#shop" class="cat-card">
+      <span class="cat-icon">🏎️</span>
+      <span class="cat-name">Performance</span>
+      <span class="cat-count">75+ items</span>
+    </a>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="products-bg" id="shop">
+  <div class="section-inner">
+    <div class="products-header">
+      <div>
+        <div class="section-label">Featured</div>
+        <div class="section-title">Best <em>Sellers</em></div>
+      </div>
+      <a href="#shop" class="btn btn-outline-navy">View All Products</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg1">
+          <div class="product-badge">Sale</div>
+          <div class="product-img-icon">🔧</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Engine Parts</div>
+          <div class="product-name">Premium Oil Filter Set</div>
+          <div class="product-desc">High-flow filtration for extended engine life. Fits most domestic & import vehicles.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$24.99</span><span class="product-price-old">$34.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg2">
+          <div class="product-badge badge-new">New</div>
+          <div class="product-img-icon">✨</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Detailing</div>
+          <div class="product-name">Ceramic Coat Pro Kit</div>
+          <div class="product-desc">Professional-grade ceramic coating. Long-lasting gloss and paint protection.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$89.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg3">
+          <div class="product-img-icon">💡</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Lighting</div>
+          <div class="product-name">LED Headlight Conversion</div>
+          <div class="product-desc">Plug-and-play LED upgrade. 6000K bright white. Universal H11/H7/9005 fitment.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$64.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg4">
+          <div class="product-badge">Sale</div>
+          <div class="product-img-icon">🛞</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Wheels & Tires</div>
+          <div class="product-name">Lug Nut Set — Black Chrome</div>
+          <div class="product-desc">20-piece set. M12×1.5 thread pitch. Corrosion resistant finish, great for custom builds.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$38.99</span><span class="product-price-old">$49.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <div>
+    <div class="promo-label">Limited Time Offer</div>
+    <div class="promo-title">20% Off All<br><em>Detailing</em> Products</div>
+    <div class="promo-desc">Stock up on car care essentials. Waxes, polishes, ceramic coatings, microfiber kits — everything you need to keep your vehicle looking its best.</div>
+    <div class="promo-actions">
+      <a href="#shop" class="btn btn-cream">Shop the Sale</a>
+      <a href="tel:2032696753" class="btn btn-outline-navy" style="border-color:rgba(255,255,255,0.3); color:rgba(255,255,255,0.8);">Call Us</a>
+    </div>
+  </div>
+  <div class="promo-img-placeholder">
+    <div class="photo-icon">🧴</div>
+    <div class="photo-label">Promo Product Photo<br>Detailing products lifestyle</div>
+    <div class="photo-tag">800 × 280px recommended</div>
+  </div>
+</div>
+
+<!-- MORE PRODUCTS -->
+<section class="more-products-bg">
+  <div class="section-inner">
+    <div class="products-header">
+      <div>
+        <div class="section-label">New Arrivals</div>
+        <div class="section-title">Just <em>In</em></div>
+      </div>
+      <a href="#shop" class="btn btn-outline-navy">See All New Items</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg5">
+          <div class="product-badge badge-new">New</div>
+          <div class="product-img-icon">🏎️</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Performance</div>
+          <div class="product-name">Cold Air Intake Kit</div>
+          <div class="product-desc">Increases airflow and throttle response. Universal fit with custom brackets available.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$149.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg6">
+          <div class="product-badge badge-new">New</div>
+          <div class="product-img-icon">🔩</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Accessories</div>
+          <div class="product-name">Stainless Skid Plate</div>
+          <div class="product-desc">Heavy-duty underbody protection. Brushed stainless steel. Truck and SUV compatible.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$119.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg7">
+          <div class="product-img-icon">🎨</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Detailing</div>
+          <div class="product-name">Foam Cannon Wash Kit</div>
+          <div class="product-desc">Pressure washer foam cannon + 2 soaps + microfiber cloths. The ultimate wash bundle.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$54.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-placeholder bg8">
+          <div class="product-badge">Sale</div>
+          <div class="product-img-icon">🔋</div>
+          <div class="product-img-tag">Product Photo</div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Engine Parts</div>
+          <div class="product-name">AGM Battery — 750 CCA</div>
+          <div class="product-desc">Maintenance-free absorbed glass mat battery. Strong cold-cranking power for all seasons.</div>
+          <div class="product-footer">
+            <div><span class="product-price">$179.99</span><span class="product-price-old">$219.99</span></div>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-bg" id="about">
+  <div class="section-inner">
+    <div class="section-label">Why NextGen</div>
+    <div class="section-title">We Know <em>Cars</em></div>
+    <p class="section-sub">We're not just a parts store — we're automotive enthusiasts who take pride in helping you find exactly what your vehicle needs.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <div class="why-title">Real Expertise</div>
+        <p class="why-desc">Our team has hands-on experience with domestic and import vehicles. Ask us anything — we'll point you to the right part every time.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <div class="why-title">Quality Guaranteed</div>
+        <p class="why-desc">We only carry parts that meet or exceed OEM standards. No knock-offs, no guesswork. Every product is vetted before it hits our shelves.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <div class="why-title">Fast Shipping & Local Pickup</div>
+        <p class="why-desc">Order online and get it shipped fast — or swing by our Wallingford location for same-day local pickup on most in-stock items.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<div class="about-strip">
+  <div class="about-img-placeholder">
+    <div class="photo-icon" style="font-size:52px; opacity:0.3;">🏪</div>
+    <div class="photo-label" style="color:rgba(27,42,74,0.45);">Shop / Team Photo<br>Storefront or staff lifestyle</div>
+    <div class="photo-tag" style="border-color:rgba(27,42,74,0.2); color:rgba(27,42,74,0.4);">900 × 360px recommended</div>
+  </div>
+  <div class="about-text">
+    <div class="section-label">Our Story</div>
+    <div class="section-title">Local. <em>Trusted.</em> Driven.</div>
+    <p class="about-body">NextGen Automotive Finishes has been serving the Wallingford, CT community with quality auto parts, accessories, and customization products. Whether you're a weekend enthusiast or a daily driver, we have what you need.</p>
+    <div class="about-details">
+      <div class="about-detail">Verified business on Yelp</div>
+      <div class="about-detail">In-store and online shopping available</div>
+      <div class="about-detail">Insurance-compatible repair parts</div>
+      <div class="about-detail">Knowledgeable, friendly staff</div>
+    </div>
+    <a href="tel:2032696753" class="btn btn-navy">Call (203) 269-6753</a>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews-bg">
+  <div class="section-inner">
+    <div class="section-label">Customer Reviews</div>
+    <div class="section-title">What <em>People</em> Say</div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Found exactly what I needed for my build at a great price. Staff actually knew what they were talking about — rare these days. Will be back."</p>
+        <div class="review-author">James T. — Wallingford, CT</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Ordered online and had my parts ready for pickup same day. Super easy process. The ceramic coat kit I bought is incredible — my car looks brand new."</p>
+        <div class="review-author">Maria G. — Meriden, CT</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Best auto parts experience I've had locally. They helped me figure out the right battery for my truck without trying to upsell me. Honest and fair."</p>
+        <div class="review-author">Dave R. — New Haven, CT</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner" id="contact">
+  <div>
+    <h2>Ready to Upgrade<br><em>Your Vehicle?</em></h2>
+    <p>Shop online or visit us in Wallingford. We're here to help you find the right parts at the right price.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="tel:2032696753" class="cta-phone">(203) 269-6753</a>
+    <div class="cta-address">39 N Plains Industrial Rd Ste 39-F<br>Wallingford, CT 06492 · Mon–Fri 9am–5pm</div>
+    <a href="#shop" class="btn btn-navy">Shop Now</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">NextGen Automotive Finishes</div>
+      <p class="footer-tagline">Quality auto parts, accessories, and customization products. Serving Wallingford, CT and surrounding areas.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li>Engine Parts</li>
+        <li>Wheels & Tires</li>
+        <li>Detailing Products</li>
+        <li>Lighting</li>
+        <li>Performance</li>
+        <li>Accessories</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:2032696753">(203) 269-6753</a></li>
+        <li>39 N Plains Industrial Rd</li>
+        <li>Ste 39-F, Wallingford CT</li>
+        <li>Mon–Fri: 9am – 5pm</li>
+        <li><a href="#">Yelp Listing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 NextGen Automotive Finishes. Wallingford, CT. All rights reserved. Site by <a href="https://quickflipdigital.com" target="_blank">QuickFlip Digital</a>.</p>
+    <p>Privacy Policy · Terms of Use</p>
+  </div>
+</footer>
+
+<!-- CART TOAST -->
+<div class="cart-toast" id="cartToast">
+  <span class="toast-check">✓</span>
+  <span id="toastMsg">Item added to cart</span>
+</div>
+
+<script>
+  let cartCount = 0;
+
+  function addToCart(btn) {
+    cartCount++;
+    document.getElementById('cartCount').textContent = cartCount;
+
+    const productName = btn.closest('.product-card').querySelector('.product-name').textContent;
+    document.getElementById('toastMsg').textContent = '"' + productName + '" added to cart';
+
+    const toast = document.getElementById('cartToast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2800);
+  }
+</script>
+
+</body>
+</html>
